@@ -30,7 +30,8 @@ body {
     background: url(img3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex; }
+    display: flex;
+    box-shadow: 3px 14px 17px 4px rgba(0, 0, 0, 0.43); }
     .bg .weather__sidebar {
       width: 40%;
       background-color: #ffffff;
