@@ -35,6 +35,7 @@ body {
         background: url(img3.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        display: flex;
 
         &__sidebar {
             width: 40%;
@@ -120,5 +121,65 @@ body {
                 border: none;
             }
         }
+
+        &__main {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        &__location {
+            max-width: 100%;
+            text-align: end;
+            margin-top: 34px;
+            margin-right: 18px;
+        }
+
+        &__city {
+            font-style: italic;
+            font-size: 36px;
+            color: #507998;
+            letter-spacing: -1px;
+            
+        }
+
+        &__state {
+            font-size: 12px;
+            font-style: italic;
+            color: #98C6E8;
+            letter-spacing: 1.71429px;
+            margin-right: 17px;
+            margin-top: -3px;
+        }
+
+        &__item {
+            display: flex;
+            color: #ffffff;
+            justify-content: space-between;
+            margin-left: 26px;
+            margin-bottom: 27px;
+            align-items: flex-end;
+        }
+
+        &__period {
+            font-style: italic;
+            font-size: 20px;
+        }
+
+        &__day {
+            font-size: 18px;
+            opacity: 0.85;
+        }
+
+        &__number {
+            font-size: 100px;
+            font-style: italic;
+            letter-spacing: -7px;
+            margin-right: 8px;
+            margin-bottom: -15px;
+        }
+
     }
+
 }
