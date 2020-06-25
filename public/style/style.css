@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.bg .weather__indicator li .weather__hour, .bg .weather__indicator li .weather__celcius {
+  font-style: italic;
+  font-size: 12px;
+  color: #4F4F4F; }
+
+ul,
+li {
+  list-style: none; }
+
+body {
+  font-family: 'ABeeZee', sans-serif; }
+
+.bg {
+  background-image: url("/src/img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  min-height: 100vh;
+  padding-top: 70px; }
+  .bg .weather {
+    width: 650px;
+    margin: 0 auto;
+    background: url("/src/img3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .bg .weather__sidebar {
+      width: 40%;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .bg .weather__logo {
+      margin-top: 38px; }
+    .bg .weather__name {
+      font-style: italic;
+      font-size: 24px;
+      color: #9E9E9E;
+      margin-top: 13px; }
+    .bg .weather__status {
+      width: 100%;
+      margin-top: 40px; }
+    .bg .weather__header {
+      display: flex;
+      border-bottom: 1px solid #D6E6F1; }
+    .bg .weather__time {
+      margin-left: 30px;
+      font-style: italic;
+      font-size: 12px;
+      color: #9C9C9C;
+      text-decoration: none;
+      padding-bottom: 11px;
+      border-bottom: 3px solid rgba(181, 221, 250, 0);
+      transition: color 0.2s linear, border-bottom 0.2s linear; }
+      .bg .weather__time:focus {
+        color: #5C5C5C;
+        border-bottom: 3px solid #B5DDFA;
+        outline: none; }
+    .bg .weather__indicator {
+      padding-top: 23px; }
+      .bg .weather__indicator li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 23px;
+        margin-right: 23px;
+        margin-bottom: 9px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #E8E8E8; }
+        .bg .weather__indicator li .weather__temp {
+          display: flex;
+          align-items: center;
+          padding-right: 11px; }
+          .bg .weather__indicator li .weather__temp img {
+            margin-right: 6px;
+            margin-top: -7px; }
+        .bg .weather__indicator li .weather__hour {
+          padding-left: 5px; }
+      .bg .weather__indicator li:last-child {
+        border: none; }
+
+/*# sourceMappingURL=style.css.map */
