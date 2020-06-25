@@ -18,7 +18,7 @@ body {
   font-family: 'ABeeZee', sans-serif; }
 
 .bg {
-  background-image: url("/src/img.jpg");
+  background-image: url(img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
@@ -27,7 +27,7 @@ body {
   .bg .weather {
     width: 650px;
     margin: 0 auto;
-    background: url("/src/img3.jpg");
+    background: url(img3.jpg);
     background-repeat: no-repeat;
     background-size: cover; }
     .bg .weather__sidebar {
