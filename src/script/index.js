@@ -89,34 +89,24 @@ const RENDER = {
 }
 
 const APP = {
-    queryParams: {},
     init(event) {
         const weather = JSON.parse(event.target.response)
 
         RENDER.base(weather);
         RENDER.ready();
 
-        const params = this.queryParams.cityName ? {
-            q: this.queryParams.cityName
-        } : {
-            lat: this.queryParams.lat,
-            lon: this.queryParams.lon
-        };
-
-        API.getForecastWeather(params, forecastEvent => {
+        API.getForecastWeather({
+            lat: weather.coord.lat,
+            lon: weather.coord.lon
+        }, forecastEvent => {
             RENDER.fillTab(JSON.parse(forecastEvent.target.response));
         });
     },
     initWithCoordinates(lat, lon) {
-        this.queryParams.lat = lat;
-        this.queryParams.lon = lon;
-
         API.getCurrentWeather({lat, lon}, (event) => this.init(event));
     },
     initWithCityName() {
         const cityName = prompt('Enter your city name');
-
-        this.queryParams.cityName = cityName;
     
         API.getCurrentWeather({q: cityName}, (event) => this.init(event));
     }
