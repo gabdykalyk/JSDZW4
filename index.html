@@ -8,28 +8,33 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="loader open" id="page-loader">
+        <div class="lds-ripple"><div></div><div></div></div>
+    </div>
+
+    <!-- APPID 3c3674a3c13a0084561b70150037e575 -->
     <div class="bg">
         <div class="weather">
             <div class="weather__sidebar">
                 <div class="weather__icon">
-                    <div class="weather__logo">
+                    <div class="weather__logo" id="icon">
                         <img src="./public/images/Cloudy Skies Icon.svg" alt="">
                     </div>
-                    <div class="weather__name">
-                        Partly Cloudy
+                    <div class="weather__name" id="weather-description">
+                        
                     </div>
                 </div>
                 <div class="weather__status">
                     <div class="weather__header">
-                        <a href="#" class="weather__time">
+                        <a href="#" class="weather__time active" id="today">
                             Today
                         </a>
-                        <a href="#" class="weather__time">
+                        <a href="#" class="weather__time" id="week">
                             Week
                         </a>
                     </div>
-                    <ul class="weather__indicator">
-                        <li>
+                    <ul class="weather__indicator" id="weather-today-content">
+                        <!-- <li>
                             <div class="weather__hour">
                                 Now
                             </div>
@@ -39,78 +44,49 @@
                                     65°
                                 </div>
                             </div>
-                        </li>
-                        <li>
+                        </li> -->
+                    </ul>
+                    <ul class="weather__indicator" hidden id="weather-week-content">
+                        <!-- <li>
                             <div class="weather__hour">
-                                9:00 a.m.
+                                Now
                             </div>
                             <div class="weather__temp">
                                 <img src="./public/images/img2.svg" alt="">
                                 <div class="weather__celcius">
-                                    71°
+                                    65°
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="weather__hour">
-                                10:00 a.m.
-                            </div>
-                            <div class="weather__temp">
-                                <img src="./public/images/img3.svg" alt="">
-                                <div class="weather__celcius">
-                                    73°
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="weather__hour">
-                                11:00 a.m.
-                            </div>
-                            <div class="weather__temp">
-                                <img src="./public/images/img3.svg" alt="">
-                                <div class="weather__celcius">
-                                    75°
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="weather__hour">
-                                12:00 p.m.
-                            </div>
-                            <div class="weather__temp">
-                                <img src="./public/images/img3.svg" alt="">
-                                <div class="weather__celcius">
-                                    84°
-                                </div>
-                            </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
             <div class="weather__main">
                 <div class="weather__location">
-                    <div class="weather__city">
-                        San Fransisco
+                    <div class="weather__city" id="city">
+                        
                     </div>
-                    <div class="weather__state">
-                        CALIFORNIA
+                    <div class="weather__state" id="country">
+                        
                     </div>
                 </div>
                 <div class="weather__item">
                     <div class="weather__data">
-                        <div class="weather__period">
-                            8:43 a.m.
+                        <div class="weather__period" id="time">
+                            
                         </div>
-                        <div class="weather__day">
-                            Monday, November 16th
+                        <div class="weather__day" id="date">
+                            
                         </div>
                     </div>
-                    <div class="weather__number">
-                        65°
+                    <div class="weather__number" id="temperature">
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="./src/script/api.js"></script>
+    <script src="./src/script/index.js"></script>
 </body>
 </html>

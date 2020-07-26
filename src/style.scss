@@ -1,3 +1,5 @@
+@import 'loader';
+
 *,
 *::before,
 *::after {
@@ -60,6 +62,11 @@ body {
         &__status {
             width: 100%;
             margin-top: 40px;
+
+            ul {
+                max-height: 200px;
+                overflow: auto;
+            }
         }
 
         &__header {
@@ -77,7 +84,7 @@ body {
             border-bottom: 3px solid rgba(181, 221, 250, 0);
             transition: color 0.2s linear, border-bottom 0.2s linear;
             
-            &:focus {
+            &.active {
                 color: #5C5C5C;
                 border-bottom: 3px solid #B5DDFA;
                 outline: none;
