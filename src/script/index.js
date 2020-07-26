@@ -96,7 +96,7 @@ const APP = {
         RENDER.base(weather);
         RENDER.ready();
 
-        const params = this.cityName ? {
+        const params = this.queryParams.cityName ? {
             q: this.queryParams.cityName
         } : {
             lat: this.queryParams.lat,
